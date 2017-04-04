@@ -23,11 +23,13 @@
         if (secondArg !== 0){
           var result = firstArg / secondArg;
           vm.result = result;
-        } else {
+        } else{
           vm.result = 'Cannot divide by zero'
         }
-      }
-      else {
+      } else if(operator === 'multiply'){
+			var result = firstArg * secondArg;
+			vm.result = result;
+		}else {
         vm.result = 'Operator not implemented';
       }
     }
